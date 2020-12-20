@@ -1,0 +1,66 @@
+Dar cursos>
+
+- Bienvenidos al curso
+
+- Requerimientos 
+
+- Conceptos basicos
+
+- Interfaces de red:
+
+c# ifconfig
+c# iwconfig
+
+- Tarjeta de red 
+
+Alpha 
+TPLINK
+la nativa
+
+* Debe aceptar el modo monitor. 
+
+- IP privada y publica
+
+- Direcciones MAC 
+ 
+c# macchanger --help
+c# macchanger -s wlan0
+
+current MAC:
+Permanent MAC:
+
+- Modo monitor:
+
+https://www.acrylicwifi.com/blog/modo-monitor-wifi/#:~:text=El%20modo%20monitor%20es%20el,Beacon)%2C%20Data%20y%20Control.
+
+c# airmon-ng start wlan0 
+c# iwconfig 
+
+wlan0mon
+
+ifconfig wlan0mon up
+ifconfig
+c# pkill dhclient && pkill wpa_supplicant
+
+* Cerrar el modo monitor> 
+
+c# airmon-ng stop wlan0
+c# /etc/init.d/networking restart 
+
+* Matar procesos con la utilidad de airmon-ng 
+
+airmon-ng check kill
+
+https://www.acrylicwifi.com/blog/modo-monitor-wifi/
+
+
+- Clonar macaddress>
+
+c# macchanger -s wlan0mon
+c# macchanger -l | grep -i "national security agency"
+00:20:91
+c# macchanger --mac=00:20:91:da:af:91 wlan0mon
+c#ifconfig wlan0mon down 
+c# macchanger --mac=00:20:91:da:af:91 wlan0mon
+c# macchanger -s wlan0mon
+ 
